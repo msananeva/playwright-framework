@@ -13,5 +13,4 @@ test('This is a login test', async ({page}) => {
   await page.getByLabel('Username').click();
   await page.getByLabel('Username').fill('11');
   await expect(page.getByLabel('Username')).toHaveValue('11');
-  await page.pause();
 })

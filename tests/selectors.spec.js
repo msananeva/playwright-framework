@@ -3,7 +3,7 @@ import {test, expect} from '@playwright/test'
 // To check if it is an unique id: Inspect > Console > $$('#example')
 // True if len == 1 
 
-test.only("Selectors", async ({page}) => {
+test("Selectors", async ({page}) => {
     //navigate to the webpage
     await page.goto('http://127.0.0.1:5500/clickMe.html')
 
@@ -44,7 +44,5 @@ test.only("Selectors", async ({page}) => {
 
     // assert the counter
     await expect(page.locator('#counter')).toContainText('12')
-
-    await page.pause()
 
 })
