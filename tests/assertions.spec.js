@@ -1,7 +1,7 @@
 import {test, expect} from '@playwright/test'
 
-test.describe('Assertions', () => {
-    test('Verify web page behavior', async ({page}) => {
+test.describe('Assertions @assertions_group', () => {
+    test('Verify web page behavior @smoke', async ({page}) => {
         await page.goto('https://the-internet.herokuapp.com/')
 
         // to have URL
